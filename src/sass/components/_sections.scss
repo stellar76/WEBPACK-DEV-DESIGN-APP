@@ -1,0 +1,93 @@
+section{
+    width: 100%;
+    float: left;
+    height: auto;
+    padding: 30px 0px;
+    background-color: #FFF;
+    &#main{
+        border-bottom: solid 1px #DDD;
+        .top-story{
+            img{
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .title{
+                font-weight: 800;
+                font-size: 33px;
+                color: #000;
+                text-decoration: none;
+            }
+            .blurb{
+                font-size: 17px;
+                color: #000;
+                text-decoration: none;
+            }
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        .top-articles{
+            width: 100%;
+            float: left;
+            height: auto;
+            margin-bottom: 30px;
+            color: #000;
+            img{
+                width: 160px;
+                float: left;
+                height: auto;
+                margin-right: 20px;
+            }
+            .content{
+                width: calc(100% - 180px);
+                float: right;
+                .title{
+                    font-size: 22px;
+                    line-height: 25px;
+                    font-weight: 800;
+                    color: #000;
+                    float: left;
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                .p{
+                    font-size: 17px;
+                    float: left;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+//
+
+footer{
+    width: 100%;
+    float: left;
+    height: auto;
+    min-height: 350px;
+}
+@media(max-width: 960px){
+    section{
+        &#main{
+            .top-story{
+                float: left;
+                margin-bottom: 25px;
+                .title{
+                    font-size:25px;
+                }
+            }
+            .top-articles{
+                img{
+                    width: 100px;
+                }
+                .content{
+                    width: calc(100% - 120px);
+                    .title{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

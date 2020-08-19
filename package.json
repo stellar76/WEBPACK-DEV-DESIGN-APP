@@ -1,0 +1,39 @@
+{
+  "name": "vue-boilerplate",
+  "description": "A Vue.js project",
+  "version": "1.0.0",
+  "author": "n-futagami <n-futagami@cloudpack.jp>",
+  "private": true,
+  "scripts": {
+    "sass-dev": "node-sass ./src/sass -o ./dist/css/ -r --output-style=compact --source-map=./dist/css",
+    "sass-watch": "node-sass ./src/sass -o ./dist/css/ -r --output-style=compact --source-map=./dist/css -w",
+    "sass-build": "node-sass ./src/sass -o ./dist/css/ -r --output-style=compressed",
+    "webpack-dev": "cross-env NODE_ENV=development webpack",
+    "webpack-watch": "cross-env NODE_ENV=development webpack -w",
+    "webpack-build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "watch": "yarn sass-watch & yarn webpack-watch",
+    "live": "yarn watch & browser-sync start -c bs-config.js",
+    "dev": "yarn sass-dev & yarn webpack-dev",
+    "build": "rm -rf ./dist & yarn sass-build & yarn webpack-build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "",
+    "babel-loader": "^7.1.5",
+    "babel-preset-latest": "",
+    "browser-sync": "",
+    "cross-env": "",
+    "css-loader": "",
+    "extract-text-webpack-plugin": "",
+    "file-loader": "",
+    "node-sass": "",
+    "sass-loader": "",
+    "style-loader": "",
+    "vue-loader": "^14.2.2",
+    "vue-template-compiler": "",
+    "vue": "",
+    "webpack": "",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": ""
+  }
+}
