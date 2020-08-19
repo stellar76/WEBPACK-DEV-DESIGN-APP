@@ -1,14 +1,9 @@
-# Vue.js-boilerplate
+# Javascript and Sass Hot compile / reload app
 
-> A Vue.js project
+> Prototyping / Design Template
 
 ## Include packages
-libraries
-- Vue.js
-- axios
-
 developer tools
-- vue-loader
 - sass
 - browser sync
 
